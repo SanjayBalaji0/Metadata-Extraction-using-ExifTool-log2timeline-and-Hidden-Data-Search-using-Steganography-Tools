@@ -1,4 +1,8 @@
 # Metadata-Extraction-using-ExifTool-log2timeline-and-Hidden-Data-Search-using-Steganography-Tools
+
+### Name : Sanjay Balaji .S
+### Reg. No: 212223240149
+
 ## AIM:
 To extract metadata, perform timeline analysis, and search for hidden data using forensic tools like ExifTool, log2timeline, and steganography detection tools.
 ## REQUIREMENTS
@@ -58,6 +62,7 @@ exiftool -r /path/to/folder
 
 - ```-GPSLatitude -GPSLongitude: Extract GPS data```
 
+![alt text](<Screenshot 2025-09-24 161749.png>)
 
 
 ### install log2timeline
@@ -73,6 +78,10 @@ sudo apt install steghide -y
 steghide embed -cf /home/kali/Downloads/wallpaper.jpg -ef /home/kali/Downloads/secret.txt
 ```
 
+![alt text](<Screenshot 2025-09-24 164407.png>)
+
+
+![alt text](<Screenshot 2025-09-24 164744.png>)
 
 - **Extract hidden data:**
 ```
@@ -80,6 +89,7 @@ steghide extract -sf hidden.jpg
 
 ```
 
+![alt text](<Screenshot 2025-09-24 164910.png>)
 
 ### Using binwalk – for file analysis
 ```bash
@@ -90,6 +100,7 @@ binwalk suspicious.jpg
 binwalk /home/kali/Downloads/wallpaper.jpg
 ```
 
+![alt text](<Screenshot 2025-09-24 165001.png>)
 
 ## RESULT:
 Metadata was successfully extracted, timeline analysis was completed, and hidden data was identified using steganography tools.
